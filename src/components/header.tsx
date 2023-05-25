@@ -4,17 +4,21 @@ import { Link } from "@builder.io/qwik-city";
 export default component$(() => {
   return (
     <header>
-      <div class="fixed top-0 h-16 w-screen text-white bg-black">
-        <div class="flex justify-between md:p-6 p-4 md:px-20 px-2">
+      <div class="fixed top-0 h-20 w-screen text-white bg-black">
+        <div class="flex justify-between items-center md:p-5 p-4 md:px-20 px-6">
           <div>
-            <Link class="font-semibold text-4xl" href="/" title="qwik">
-              ...broky.dev
+            <Link
+              class="font-semibold md:text-4xl text-3xl"
+              href="/"
+              title="qwik"
+            >
+              broky
             </Link>
           </div>
           <ul class="flex space-x-6">
             <li>
               <Link
-                class="text-xl hover:text-gray-300 transition"
+                class="md:text-xl text-lg hover:text-gray-300 transition"
                 href="/blogs"
               >
                 Blogs
@@ -22,7 +26,7 @@ export default component$(() => {
             </li>
             <li>
               <Link
-                class="text-xl hover:text-gray-300 transition"
+                class="md:text-xl text-lg hover:text-gray-300 transition"
                 href="/projects"
               >
                 Projects
@@ -30,7 +34,7 @@ export default component$(() => {
             </li>
             <li>
               <Link
-                class="text-xl hover:text-gray-300 transition"
+                class="md:text-xl text-lg hover:text-gray-300 transition"
                 href="/guides"
               >
                 Guides

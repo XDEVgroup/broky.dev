@@ -14,10 +14,10 @@ export const head: DocumentHead = {
 export default component$(() => {
   return (
     <>
-      <div class="flex h-screen  items-center  bg-black">
+      <div class="flex h-screen   bg-black">
         <div class="bg-gradient-to-b from-violet-600/[.15] via-transparent w-screen">
-          <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-40 space-y-8">
-            <div class="flex justify-center">
+          <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-32 space-y-8">
+            <div class="flex justify-center md:mt-0 mt-20">
               <Link
                 class="group inline-block bg-white/[.05] hover:bg-white/[.1] border border-white/[.05] p-1 pl-4 rounded-full shadow-md"
                 href="/blogs"

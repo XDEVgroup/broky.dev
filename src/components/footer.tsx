@@ -12,7 +12,8 @@ export default component$(() => {
               href="#"
               aria-label="Brand"
             >
-              broky.dev
+              broky.dev{" "}
+              <small class="font-light">| 2023 | Made by Mark Teekens :)</small>
             </a>
           </div>
 
