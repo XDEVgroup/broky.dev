@@ -4,11 +4,11 @@ import { Link } from "@builder.io/qwik-city";
 export default component$(() => {
   return (
     <footer>
-      <div class="max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto">
+      <div class="bg-transparent fixed bottom-0 w-screen py-10 px-4 sm:px-6 lg:px-8 mx-auto text-white">
         <div class="grid grid-cols-1 md:grid-cols-3 items-center gap-5 text-center">
           <div>
             <a
-              class="flex-none text-xl font-semibold text-black "
+              class="flex-none text-xl font-semibold  "
               href="#"
               aria-label="Brand"
             >
@@ -18,26 +18,17 @@ export default component$(() => {
 
           <ul class="text-center">
             <li class="inline-block relative pr-8 last:pr-0 last-of-type:before:hidden before:absolute before:top-1/2 before:right-3 before:-translate-y-1/2 before:content-['/'] before:text-gray-300 dark:before:text-gray-600">
-              <Link
-                class="inline-flex gap-x-2 text-sm text-gray-500 hover:text-gray-800 dark:text-gray-500 "
-                href="/blogs"
-              >
+              <Link class="" href="/blogs">
                 Blogs
               </Link>
             </li>
             <li class="inline-block relative pr-8 last:pr-0 last-of-type:before:hidden before:absolute before:top-1/2 before:right-3 before:-translate-y-1/2 before:content-['/'] before:text-gray-300 dark:before:text-gray-600">
-              <Link
-                class="inline-flex gap-x-2 text-sm text-gray-500 hover:text-gray-800 dark:text-gray-500 "
-                href="/projects"
-              >
+              <Link class=" " href="/projects">
                 Projects
               </Link>
             </li>
             <li class="inline-block relative pr-8 last:pr-0 last-of-type:before:hidden before:absolute before:top-1/2 before:right-3 before:-translate-y-1/2 before:content-['/'] before:text-gray-300 dark:before:text-gray-600">
-              <Link
-                class="inline-flex gap-x-2 text-sm text-gray-500 hover:text-gray-800 dark:text-gray-500 "
-                href="/guides"
-              >
+              <Link class=" " href="/guides">
                 Guides
               </Link>
             </li>

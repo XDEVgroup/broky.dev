@@ -5,7 +5,8 @@ module.exports = {
     extend:
     {
       fontFamily: {
-        'inter': ['Inter', 'sans-serif']
+        'inter': ['Inter', 'sans-serif'],
+        'playfair': ['Playfair']
       },
     },
   },
