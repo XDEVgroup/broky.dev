@@ -1,6 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import { DocumentHead, Link } from "@builder.io/qwik-city";
-import { blogs } from "~/ultils/blogs";
+import { blogs } from "~/ultils/stories";
 
 export const head: DocumentHead = {
   title: "Broky.dev | Software developer",
