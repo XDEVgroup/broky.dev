@@ -15,7 +15,7 @@ export default component$(() => {
   return (
     <>
       <div class="flex h-screen   bg-black">
-        <div class="bg-gradient-to-b from-violet-600/[.15] via-transparent w-screen">
+        <div class="bg-gradient-to-b from-violet-800/[.15] via-transparent w-screen">
           <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-32 space-y-8">
             <div class="flex justify-center md:mt-0 mt-20">
               <Link
