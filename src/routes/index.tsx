@@ -25,7 +25,7 @@ export default component$(() => {
                 href="/blogs"
               >
                 <p class="mr-2 inline-block text-white text-sm">
-                  Check out my latest blog.
+                  Check out my latest blogs.
                 </p>
                 <span class="group-hover:bg-white/[.1] py-2 px-3 inline-flex justify-center items-center gap-x-2 rounded-full bg-white/[.075] font-semibold text-white text-sm">
                   <svg
@@ -47,6 +47,13 @@ export default component$(() => {
             </div>
 
             <div class="max-w-3xl text-center mx-auto">
+              <div class="flex items-center justify-center">
+                <img
+                  src="/markt.png"
+                  alt=""
+                  class="h-28 w-28 -rotate-12  transition duration-400 rounded-full border-4 border-indigo-400 "
+                />
+              </div>
               <h1 class="block font-medium text-gray-200 text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
                 Hey, my name is Broky, I'm a Front-end Dev.
               </h1>
