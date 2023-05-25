@@ -1,5 +1,5 @@
 import { component$ } from "@builder.io/qwik";
-import type { DocumentHead } from "@builder.io/qwik-city";
+import { DocumentHead, Link } from "@builder.io/qwik-city";
 
 export const head: DocumentHead = {
   title: "Broky.dev | Software developer",
@@ -14,21 +14,73 @@ export const head: DocumentHead = {
 export default component$(() => {
   return (
     <>
-      <div class="flex h-screen  items-center  bg-slate-900">
-        <div class="px-8">
-          <h1 class="text-7xl font-inter font-semibold text-gray-200">
-            Hi, my name is Mark a.k.a. Broky
-          </h1>
-          <p class="text-5xl font-playfair font-black text-blue-700 mt-4  p-2 ">
-            Front-end developer
-          </p>
-          <div class="flex space-x-6 mt-4">
-            <button class="uppercase py-2 px-6 bg-black rounded-sm text-white hover:text-black transition duration-500 hover:bg-blue-400 font-bold text-lg">
-              My projects
-            </button>
-            <button class="py-2 px-6 uppercase bg-blue-400 rounded-sm text-black duration-500 hover:bg-black hover:text-white transition font-bold text-lg">
-              My blogs
-            </button>
+      <div class="flex h-screen  items-center  bg-black">
+        <div class="bg-slate-900">
+          <div class="bg-gradient-to-b from-violet-600/[.15] via-transparent w-screen">
+            <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-24 space-y-8">
+              <div class="flex justify-center">
+                <Link
+                  class="group inline-block bg-white/[.05] hover:bg-white/[.1] border border-white/[.05] p-1 pl-4 rounded-full shadow-md"
+                  href="/blogs"
+                >
+                  <p class="mr-2 inline-block text-white text-sm">
+                    Check out my latest blog.
+                  </p>
+                  <span class="group-hover:bg-white/[.1] py-2 px-3 inline-flex justify-center items-center gap-x-2 rounded-full bg-white/[.075] font-semibold text-white text-sm">
+                    <svg
+                      class="w-2.5 h-2.5"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </span>
+                </Link>
+              </div>
+
+              <div class="max-w-3xl text-center mx-auto">
+                <h1 class="block font-medium text-gray-200 text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
+                  Hey, my name is Broky, I'm a Front-end Dev.
+                </h1>
+              </div>
+
+              <div class="max-w-3xl text-center mx-auto">
+                <p class="text-lg text-gray-400">
+                  I have experience in React, Vue, Qwik, Nuxt3, NextJS and
+                  NodeJS.
+                </p>
+              </div>
+
+              <div class="text-center">
+                <Link
+                  class="inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 shadow-lg shadow-transparent hover:shadow-blue-700/50 border border-transparent text-white text-sm font-medium rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white py-3 px-6 dark:focus:ring-offset-gray-800"
+                  href="/projects"
+                >
+                  My projects
+                  <svg
+                    class="w-2.5 h-2.5"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                  >
+                    <path
+                      d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>

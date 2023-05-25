@@ -6,7 +6,7 @@ import Footer from "~/components/footer";
 export default component$(() => {
   return (
     <>
-      <div class="font-inter">
+      <div class="">
         <Header />
         <main class="min-h-screen ">
           <Slot />
