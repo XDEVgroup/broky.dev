@@ -14,7 +14,7 @@ export const head: DocumentHead = {
 export default component$(() => {
   return (
     <>
-      <div></div>
+      <div>projects</div>
     </>
   );
 });
