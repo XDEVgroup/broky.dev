@@ -1,5 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import { DocumentHead, Link } from "@builder.io/qwik-city";
+import Header from "~/components/header";
 
 export const head: DocumentHead = {
   title: "Broky.dev | Software developer",
@@ -14,6 +15,7 @@ export const head: DocumentHead = {
 export default component$(() => {
   return (
     <>
+      <Header />
       <div class="flex h-screen   bg-black">
         <div class="bg-gradient-to-b from-violet-800/[.15] via-transparent w-screen">
           <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-32 space-y-8">

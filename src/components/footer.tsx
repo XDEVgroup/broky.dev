@@ -4,17 +4,17 @@ import { Link } from "@builder.io/qwik-city";
 export default component$(() => {
   return (
     <footer>
-      <div class="bg-transparent fixed bottom-0 w-screen py-10 px-4 sm:px-6 lg:px-8 mx-auto text-white">
+      <div class=" w-screen py-10 px-4 sm:px-6 lg:px-8 mx-auto text-white bg-black">
         <div class="grid grid-cols-1 md:grid-cols-3 items-center gap-5 text-center">
           <div>
-            <a
+            <Link
               class="flex-none text-xl font-semibold  "
               href="#"
               aria-label="Brand"
             >
               broky.dev{" "}
               <small class="font-light">| 2023 | Made by Mark Teekens :)</small>
-            </a>
+            </Link>
           </div>
 
           <ul class="text-center">

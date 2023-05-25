@@ -4,7 +4,7 @@ import { Link } from "@builder.io/qwik-city";
 export default component$(() => {
   return (
     <header>
-      <div class="fixed top-0 h-20 w-screen text-white bg-black">
+      <div class="fixed top-0 z-20 h-20 w-screen text-white bg-black">
         <div class="flex justify-between items-center md:p-5 p-4 md:px-20 px-6">
           <div>
             <Link

@@ -6,13 +6,10 @@ import Footer from "~/components/footer";
 export default component$(() => {
   return (
     <>
-      <div class="">
-        <Header />
-        <main class="min-h-screen ">
-          <Slot />
-        </main>
-        <Footer />
-      </div>
+      <main class="min-h-screen ">
+        <Slot />
+      </main>
+      <Footer />
     </>
   );
 });
