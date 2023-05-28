@@ -62,6 +62,7 @@ export default component$(() => {
           </div>
         </div>
       </header>
+
       <div>
         <div class="mt-20">
           {" "}

@@ -55,7 +55,7 @@ export default component$(() => {
                 />
               </div>
               <h1 class="block font-medium text-gray-200 text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
-                Hey, my name is Broky, I'm a Front-end Dev.
+                Hey, my name is Mark, I'm a front-end dev.
               </h1>
             </div>
 

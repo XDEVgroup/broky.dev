@@ -17,7 +17,7 @@ export const blogs = [
     {
       id: 1,
       title: "Ruby Finance",
-      category: "Website",
+      category: "Website & admin panel",
       image: "/websites/ruby.jpg",
     },
     {
@@ -83,7 +83,7 @@ export const blogs = [
     {
       id: 12,
       title: "Tsx Tech",
-      category: "Website",
+      category: "Website & admin panel",
       image: "/websites/tsxwebsite.png",
     },
     {
@@ -91,6 +91,12 @@ export const blogs = [
       title: "Meta-buddies",
       category: "Website",
       image: "/websites/metabuddieswebsite.jpg",
+    },
+    {
+      id: 13,
+      title: "Ultra Cura",
+      category: "Website & admin panel",
+      image: "/websites/ultracura.png",
     },
   ];
 
