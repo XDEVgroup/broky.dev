@@ -1,5 +1,5 @@
 import { component$ } from "@builder.io/qwik";
-import { DocumentHead, Link, useLocation } from "@builder.io/qwik-city";
+import { DocumentHead, useLocation } from "@builder.io/qwik-city";
 import Headercontent from "~/components/headercontent";
 import { blogs } from "~/ultils/stories";
 

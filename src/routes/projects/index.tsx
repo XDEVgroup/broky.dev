@@ -1,5 +1,5 @@
 import { component$, useSignal, useVisibleTask$ } from "@builder.io/qwik";
-import { DocumentHead, Link } from "@builder.io/qwik-city";
+import { DocumentHead } from "@builder.io/qwik-city";
 import Headercontent from "~/components/headercontent";
 import { projects1, projects2, projects3, projects4 } from "~/ultils/stories";
 
