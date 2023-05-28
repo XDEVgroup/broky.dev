@@ -8,11 +8,11 @@ export default component$(() => {
         <div class="flex justify-between items-center md:p-5 p-4 md:px-20 px-6">
           <div>
             <Link
-              class="font-semibold md:text-4xl text-3xl"
+              class="font-semibold md:text-3xl text-2xl"
               href="/"
               title="qwik"
             >
-              broky
+              broky.dev
             </Link>
           </div>
           <ul class="flex space-x-6">
