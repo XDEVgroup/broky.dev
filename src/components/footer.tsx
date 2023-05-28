@@ -29,8 +29,8 @@ export default component$(() => {
               </Link>
             </li>
             <li class="inline-block relative pr-8 last:pr-0 last-of-type:before:hidden before:absolute before:top-1/2 before:right-3 before:-translate-y-1/2 before:content-['/'] before:text-gray-300 dark:before:text-gray-600">
-              <Link class=" " href="/guides">
-                Guides
+              <Link class=" " href="/experience">
+                Experience
               </Link>
             </li>
           </ul>
