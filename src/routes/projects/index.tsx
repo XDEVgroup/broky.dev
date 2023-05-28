@@ -94,7 +94,7 @@ export default component$(() => {
           <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10 lg:mb-14">
             {projects1.map((project) => {
               return (
-                <div class={{ animate: animate1.value }}>
+                <div class={{ value: animate1.value }}>
                   <div class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800">
                     <div class="aspect-w-16 aspect-h-9">
                       <img
@@ -117,7 +117,7 @@ export default component$(() => {
             })}
             {projects2.map((project) => {
               return (
-                <div class={{ animate: animate2.value }}>
+                <div class={{ value: animate2.value }}>
                   <div class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800">
                     <div class="aspect-w-16 aspect-h-9">
                       <img
@@ -140,7 +140,7 @@ export default component$(() => {
             })}
             {projects3.map((project) => {
               return (
-                <div class={{ animate: animate3.value }}>
+                <div class={{ value: animate3.value }}>
                   <div class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800">
                     <div class="aspect-w-16 aspect-h-9">
                       <img
@@ -163,7 +163,7 @@ export default component$(() => {
             })}
             {projects4.map((project) => {
               return (
-                <div class={{ animate: animate4.value }}>
+                <div class={{ value: animate4.value }}>
                   <div class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800">
                     <div class="aspect-w-16 aspect-h-9">
                       <img
