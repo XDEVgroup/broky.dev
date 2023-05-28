@@ -2,6 +2,7 @@ import { component$ } from "@builder.io/qwik";
 import { DocumentHead, Link, useLocation } from "@builder.io/qwik-city";
 
 import { projects1 } from "../../../ultils/stories";
+import Headercontent from "~/components/headercontent";
 
 export const head: DocumentHead = {
   title: "Broky.dev | Software developer",
@@ -21,47 +22,7 @@ export default component$(() => {
 
   return (
     <>
-      <header>
-        <div class="fixed top-0 z-20 h-20 w-screen text-black bg-transparent backdrop-blur-sm">
-          <div class="flex justify-between items-center md:p-5 p-4 md:px-20 px-6">
-            <div>
-              <Link
-                class="font-semibold md:text-4xl text-3xl"
-                href="/"
-                title="qwik"
-              >
-                broky
-              </Link>
-            </div>
-            <ul class="flex space-x-6">
-              <li>
-                <Link
-                  class="md:text-xl text-lg hover:text-gray-300 transition"
-                  href="/blogs"
-                >
-                  Blogs
-                </Link>
-              </li>
-              <li>
-                <Link
-                  class="md:text-xl text-lg hover:text-gray-300 transition"
-                  href="/projects"
-                >
-                  Projects
-                </Link>
-              </li>
-              <li>
-                <Link
-                  class="md:text-xl text-lg hover:text-gray-300 transition"
-                  href="/guides"
-                >
-                  Guides
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </header>
+      <Headercontent />
 
       <div>
         <div class="mt-20">
