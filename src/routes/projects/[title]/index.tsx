@@ -1,7 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import { DocumentHead, Link, useLocation } from "@builder.io/qwik-city";
 
-import { projects } from "../../../ultils/stories";
+import { projects1 } from "../../../ultils/stories";
 
 export const head: DocumentHead = {
   title: "Broky.dev | Software developer",
@@ -15,7 +15,7 @@ export const head: DocumentHead = {
 };
 export default component$(() => {
   const loc = useLocation();
-  const findBlog = projects.find(
+  const findBlog = projects1.find(
     (project) => loc.params.title === project.title
   );
 

@@ -1,6 +1,6 @@
 import { component$, useSignal, useVisibleTask$ } from "@builder.io/qwik";
 import { DocumentHead, Link } from "@builder.io/qwik-city";
-import { projects } from "~/ultils/stories";
+import { projects1, projects2, projects3, projects4 } from "~/ultils/stories";
 
 export const head: DocumentHead = {
   title: "Broky.dev | Software developer",
@@ -13,9 +13,22 @@ export const head: DocumentHead = {
   ],
 };
 export default component$(() => {
-  const animate = useSignal(false);
+  const animate1 = useSignal(false);
+  const animate2 = useSignal(false);
+  const animate3 = useSignal(false);
+  const animate4 = useSignal(false);
+
   useVisibleTask$(() => {
-    animate.value = true;
+    animate1.value = true;
+  });
+  useVisibleTask$(() => {
+    animate2.value = true;
+  });
+  useVisibleTask$(() => {
+    animate3.value = true;
+  });
+  useVisibleTask$(() => {
+    animate4.value = true;
   });
   return (
     <>
@@ -79,9 +92,78 @@ export default component$(() => {
 
         <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
           <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10 lg:mb-14">
-            {projects.map((project) => {
+            {projects1.map((project) => {
               return (
-                <div class={{ animate: animate.value }}>
+                <div class={{ animate: animate1.value }}>
+                  <div class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800">
+                    <div class="aspect-w-16 aspect-h-9">
+                      <img
+                        class="w-full group-hover:scale-95 transition duration-700 object-cover rounded-t-xl h-60"
+                        src={project.image}
+                        alt="Image Description"
+                      />
+                    </div>
+                    <div class="p-4 md:p-5">
+                      <p class="mt-2 text-xs uppercase text-gray-600 dark:text-gray-400">
+                        {project.category}
+                      </p>
+                      <h3 class="mt-2 text-lg font-medium text-gray-800 group-hover:text-blue-600 dark:text-gray-300 dark:group-hover:text-white">
+                        {project.title}
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+            {projects2.map((project) => {
+              return (
+                <div class={{ animate: animate2.value }}>
+                  <div class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800">
+                    <div class="aspect-w-16 aspect-h-9">
+                      <img
+                        class="w-full group-hover:scale-95 transition duration-700 object-cover rounded-t-xl h-60"
+                        src={project.image}
+                        alt="Image Description"
+                      />
+                    </div>
+                    <div class="p-4 md:p-5">
+                      <p class="mt-2 text-xs uppercase text-gray-600 dark:text-gray-400">
+                        {project.category}
+                      </p>
+                      <h3 class="mt-2 text-lg font-medium text-gray-800 group-hover:text-blue-600 dark:text-gray-300 dark:group-hover:text-white">
+                        {project.title}
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+            {projects3.map((project) => {
+              return (
+                <div class={{ animate: animate3.value }}>
+                  <div class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800">
+                    <div class="aspect-w-16 aspect-h-9">
+                      <img
+                        class="w-full group-hover:scale-95 transition duration-700 object-cover rounded-t-xl h-60"
+                        src={project.image}
+                        alt="Image Description"
+                      />
+                    </div>
+                    <div class="p-4 md:p-5">
+                      <p class="mt-2 text-xs uppercase text-gray-600 dark:text-gray-400">
+                        {project.category}
+                      </p>
+                      <h3 class="mt-2 text-lg font-medium text-gray-800 group-hover:text-blue-600 dark:text-gray-300 dark:group-hover:text-white">
+                        {project.title}
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+            {projects4.map((project) => {
+              return (
+                <div class={{ animate: animate4.value }}>
                   <div class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800">
                     <div class="aspect-w-16 aspect-h-9">
                       <img
