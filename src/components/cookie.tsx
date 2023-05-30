@@ -2,7 +2,7 @@ import { component$, useSignal, useVisibleTask$ } from "@builder.io/qwik";
 
 export default component$(() => {
   const ref = useSignal<any>();
-  const dataVal = useSignal();
+  const dataVal = useSignal<any>();
 
   useVisibleTask$(() => {
     dataVal.value = localStorage.getItem("cookiebar");
