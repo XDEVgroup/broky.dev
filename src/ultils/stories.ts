@@ -28,25 +28,25 @@ export const blogsexample = [
       id: 1,
       title: "Ruby Finance",
       category: "Website & admin panel",
-      image: "/websites/ruby.jpg",
+      image: "/websites/rubywebsite.webp",
     },
     {
       id: 2,
       title: "Online with you",
       category: "website",
-      image: "/websites/owy.jpg",
+      image: "/websites/owy.webp",
     },
     {
       id: 3,
       title: "Ruby App",
       category: "Web-app",
-      image: "/websites/rubyapp.png",
+      image: "/websites/rubyplatformwebsite.webp",
     },
     {
       id: 4,
       title: "Veta Ent.",
-      category: "Website",
-      image: "/websites/vetawebsite.jpg",
+      category: "web-app",
+      image: "/websites/vetaappwebsite.webp",
     },
     
   ];
@@ -55,8 +55,8 @@ export const blogsexample = [
     {
       id: 5,
       title: "Veta Ent.",
-      category: "web-app",
-      image: "/websites/vetaapp.jpg",
+      category: "Website",
+      image: "/websites/vetawebsite.jpg",
     },
     {
       id: 6,
