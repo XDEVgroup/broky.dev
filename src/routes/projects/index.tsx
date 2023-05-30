@@ -1,8 +1,6 @@
 import { component$, useSignal, useVisibleTask$ } from "@builder.io/qwik";
 import { DocumentHead } from "@builder.io/qwik-city";
 import Headercontent from "~/components/headercontent";
-import projects from "~/components/projects";
-import Projects from "~/components/projects";
 import { projects1, projects2, projects3, projects4 } from "~/ultils/stories";
 
 export const head: DocumentHead = {
