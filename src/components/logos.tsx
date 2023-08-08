@@ -11,7 +11,7 @@ export default component$((props: any) => {
         layout="constrained"
         src={logo}
         alt="qwik"
-        class="h-10 w-auto"
+        class="md:h-10 h-5 w-auto"
       />
     </>
   );

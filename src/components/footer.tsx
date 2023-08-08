@@ -13,7 +13,7 @@ export default component$(() => {
               aria-label="Brand"
             >
               broky.dev{" "}
-              <small class="font-light">| 2023 | Made by Mark Teekens :)</small>
+              <small class="font-light">| 2023 | Made by Mark Teekens</small>
             </Link>
           </div>
 
