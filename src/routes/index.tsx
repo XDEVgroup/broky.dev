@@ -19,7 +19,7 @@ export default component$(() => {
   return (
     <>
       <Header />
-      <div class="flex h-screen   bg-black">
+      <div class="flex min-h-screen   bg-black">
         <div class="bg-gradient-to-b from-sky-800/[.60] via-sky-800/[.10] w-screen">
           <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-32 space-y-8">
             <div class="flex justify-center md:mt-0 mt-20">
