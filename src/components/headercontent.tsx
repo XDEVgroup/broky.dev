@@ -19,25 +19,9 @@ export default component$(() => {
             <li>
               <Link
                 class="md:text-xl text-lg hover:text-gray-300 transition"
-                href="/blogs"
-              >
-                Blogs
-              </Link>
-            </li>
-            <li>
-              <Link
-                class="md:text-xl text-lg hover:text-gray-300 transition"
                 href="/projects"
               >
                 Projects
-              </Link>
-            </li>
-            <li>
-              <Link
-                class="md:text-xl text-lg hover:text-gray-300 transition"
-                href="/experience"
-              >
-                Experience
               </Link>
             </li>
           </ul>

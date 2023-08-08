@@ -6,7 +6,7 @@ export default component$(() => {
     <>
       <Cookie />
 
-      <main class="min-h-screen ">
+      <main class=" ">
         <Slot />
       </main>
       <Footer />

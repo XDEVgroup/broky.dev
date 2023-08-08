@@ -1,28 +1,3 @@
-export const blogsexample = [
-    {
-      // id: 1,
-      // title: "Here are a few secret steps to learn things quickly.",
-      // category: "Coding",
-      // image: "/coding.webp",
-      // introduction: "As a software developer you have to learn things over and over again. In schools they don't teach you how to learn new stuff, they teach how to remember things. And this is really bad. Let me explain you in a while.",
-      // motivation: "In this blog I will share my ideas and experience, how I learned everything quickly, and how you can do it in a few easy steps.",
-      // introimg: "/wolf.jpg"
-    },
-    
-  ];
-  export const blogs = [
-    {
-      id: 1,
-      title: "Unfinished",
-      category: "Unfinished",
-      image: "/wolf.jpg",
-      introduction: "Unfinished",
-      motivation: "Unfinished",
-      introimg: "/wolf.jpg"
-    },
-    
-  ];
-
   export const projects1 = [
     {
       id: 1,
@@ -127,5 +102,21 @@ export const blogsexample = [
       category: "Website",
       image: "/websites/brokyweb.jpg",
     },
+    {
+      id: 16,
+      title: "BabaChulz",
+      category: "Applicatie",
+      image: "/websites/babachulz.png",
+    },
+  ];
+  export const projects5 = [
+    {
+      id: 17,
+      title: "Boilerplate store",
+      category: "Applicatie",
+      image: "/websites/boilerplate.png",
+    }
     
   ];
+
+  export  const logos = ["/react.png", "/vue.png", "/qwik.png", "/ts.png", "/golang.png", "/next.png", "/nuxt.png",]

@@ -1,7 +1,14 @@
 import { component$, useSignal, useVisibleTask$ } from "@builder.io/qwik";
 import { DocumentHead } from "@builder.io/qwik-city";
 import Headercontent from "~/components/headercontent";
-import { projects1, projects2, projects3, projects4 } from "~/ultils/stories";
+import {
+  projects1,
+  projects2,
+  projects3,
+  projects4,
+  projects5,
+} from "~/ultils/stories";
+import { Image } from "@unpic/qwik";
 
 export const head: DocumentHead = {
   title: "Broky.dev | Software developer",
@@ -15,6 +22,7 @@ export const head: DocumentHead = {
 };
 
 export default component$(() => {
+  const animate5 = useSignal<boolean>(false);
   const animate3 = useSignal<boolean>(false);
   const animate4 = useSignal<boolean>(false);
   const animate2 = useSignal<boolean>(false);
@@ -37,7 +45,8 @@ export default component$(() => {
 
             <div class="mt-5 max-w-3xl text-center mx-auto">
               <p class="text-lg text-gray-600 ">
-                Here's a grid of all my projects I created recently.
+                Most of the projects I've worked on last years. I will add
+                detailed pages when I have more time.
               </p>
             </div>
           </div>
@@ -57,7 +66,10 @@ export default component$(() => {
                     <div>
                       <div class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800">
                         <div class="aspect-w-16 aspect-h-9">
-                          <img
+                          <Image
+                            layout="constrained"
+                            width={800}
+                            height={600}
                             class="w-full group-hover:scale-95 transition duration-700 object-cover rounded-t-xl h-60"
                             src={project.image}
                             alt="Image Description"
@@ -91,7 +103,10 @@ export default component$(() => {
                     <div>
                       <div class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800">
                         <div class="aspect-w-16 aspect-h-9">
-                          <img
+                          <Image
+                            layout="constrained"
+                            width={800}
+                            height={600}
                             class="w-full group-hover:scale-95 transition duration-700 object-cover rounded-t-xl h-60"
                             src={project.image}
                             alt="Image Description"
@@ -125,7 +140,10 @@ export default component$(() => {
                     <div>
                       <div class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800">
                         <div class="aspect-w-16 aspect-h-9">
-                          <img
+                          <Image
+                            layout="constrained"
+                            width={800}
+                            height={600}
                             class="w-full group-hover:scale-95 transition duration-700 object-cover rounded-t-xl h-60"
                             src={project.image}
                             alt="Image Description"
@@ -147,14 +165,54 @@ export default component$(() => {
             </div>
           )}
           {animate4.value && (
-            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10 lg:mb-14">
+            <div
+              document:onScroll$={() => {
+                animate5.value = true;
+              }}
+              class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10 lg:mb-14"
+            >
               {projects4.map((project: any) => {
                 return (
                   <>
                     <div>
                       <div class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800">
                         <div class="aspect-w-16 aspect-h-9">
-                          <img
+                          <Image
+                            layout="constrained"
+                            width={800}
+                            height={600}
+                            class="w-full group-hover:scale-95 transition duration-700 object-cover rounded-t-xl h-60"
+                            src={project.image}
+                            alt="Image Description"
+                          />
+                        </div>
+                        <div class="p-4 md:p-5">
+                          <p class="mt-2 text-xs uppercase text-gray-600 dark:text-gray-400">
+                            {project.category}
+                          </p>
+                          <h3 class="mt-2 text-lg font-medium text-gray-800 group-hover:text-blue-600 dark:text-gray-300 dark:group-hover:text-white">
+                            {project.title}
+                          </h3>
+                        </div>
+                      </div>
+                    </div>
+                  </>
+                );
+              })}
+            </div>
+          )}
+          {animate5.value && (
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10 lg:mb-14">
+              {projects5.map((project: any) => {
+                return (
+                  <>
+                    <div>
+                      <div class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800">
+                        <div class="aspect-w-16 aspect-h-9">
+                          <Image
+                            layout="constrained"
+                            width={800}
+                            height={600}
                             class="w-full group-hover:scale-95 transition duration-700 object-cover rounded-t-xl h-60"
                             src={project.image}
                             alt="Image Description"

@@ -1,6 +1,9 @@
 import { component$ } from "@builder.io/qwik";
 import { DocumentHead, Link } from "@builder.io/qwik-city";
 import Header from "~/components/header";
+import { Image } from "@unpic/qwik";
+import Logos from "~/components/logos";
+import { logos } from "~/ultils/stories";
 
 export const head: DocumentHead = {
   title: "Broky.dev | Software developer",
@@ -17,15 +20,15 @@ export default component$(() => {
     <>
       <Header />
       <div class="flex h-screen   bg-black">
-        <div class="bg-gradient-to-b from-violet-800/[.15] via-transparent w-screen">
+        <div class="bg-gradient-to-b from-sky-800/[.60] via-sky-800/[.10] w-screen">
           <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-32 space-y-8">
             <div class="flex justify-center md:mt-0 mt-20">
               <Link
                 class="group inline-block bg-white/[.05] hover:bg-white/[.1] border border-white/[.05] p-1 pl-4 rounded-full shadow-md"
-                href="/blogs"
+                href="/projects"
               >
                 <p class="mr-2 inline-block text-white text-sm">
-                  Check out my latest blogs.
+                  Check out my latest projects.
                 </p>
                 <span class="group-hover:bg-white/[.1] py-2 px-3 inline-flex justify-center items-center gap-x-2 rounded-full bg-white/[.075] font-semibold text-white text-sm">
                   <svg
@@ -48,7 +51,10 @@ export default component$(() => {
 
             <div class="max-w-3xl text-center mx-auto">
               <div class="flex items-center justify-center">
-                <img
+                <Image
+                  layout="constrained"
+                  width={800}
+                  height={600}
                   src="/markt.png"
                   alt=""
                   class="h-28 w-28 -rotate-12  transition duration-400 rounded-full border-4 border-indigo-400 "
@@ -61,10 +67,17 @@ export default component$(() => {
 
             <div class="max-w-3xl text-center mx-auto">
               <p class="text-lg text-gray-400">
-                I have experience in React, Vue, Qwik, Nuxt3, NextJS and NodeJS.
+                I have experience in React, Vue, Qwik, Typescript, Go-lang,
+                NextJS, Nuxt3 and NodeJS.
               </p>
             </div>
-
+            <div class="text-white max-w-3xl text-center mx-auto">
+              <div class="flex items-center p-4 bg-gray-100 rounded gap-4 justify-between">
+                {logos.map((logo) => {
+                  return <Logos logo={logo} />;
+                })}
+              </div>
+            </div>
             <div class="text-center">
               <Link
                 class="inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 shadow-lg shadow-transparent hover:shadow-blue-700/50 border border-transparent text-white text-sm font-medium rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white py-3 px-6 dark:focus:ring-offset-gray-800"

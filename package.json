@@ -41,6 +41,6 @@
     "vite-tsconfig-paths": "4.2.0"
   },
   "dependencies": {
-    
+    "@unpic/qwik": "^0.0.25"
   }
 }
