@@ -49,8 +49,8 @@ export default component$(() => {
               height={600}
               width={600}
               class="border-groove h-80 w-full cursor-pointer border-8 border-black object-cover transition-all duration-300 hover:scale-95"
-              src={item?.image!}
-              alt={item?.title!}
+              src={item?.image}
+              alt={item?.title}
             />
             <div class="duration-400 absolute left-0 top-0 flex h-80 w-full items-center justify-center bg-transparent text-xl font-bold  uppercase text-transparent transition  group-hover:bg-purple-500   group-hover:text-black ">
               Bekijk website
