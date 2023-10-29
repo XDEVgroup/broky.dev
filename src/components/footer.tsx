@@ -42,7 +42,7 @@ export default component$(() => {
             </a>
             <a
               class="inline-flex justify-center items-center w-8 h-8 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition dark:text-gray-500 dark:hover:text-gray-200 dark:hover:bg-gray-800 dark:focus:ring-offset-slate-900"
-              href="https://github.com/markteekens"
+              href="https://github.com/markjkaem"
               target="_blank"
             >
               <svg
