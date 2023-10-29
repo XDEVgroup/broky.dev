@@ -14,11 +14,11 @@ export default component$(() => {
   return (
     <>
       <Header />
-      <div class="h-full min-h-screen bg-slate-900 bg-cover bg-bottom">
-        <div class="m-auto flex min-h-screen  flex-col">
+      <div class="bg-black">
+        <div class="m-auto flex min-h-screen  flex-col bg-gradient-to-b from-sky-800/[.60] via-sky-800/[.10] w-screen">
           <div class="">
             <div class="relative overflow-hidden before:absolute before:left-1/2 before:top-0 before:-z-[1] before:h-full before:w-full before:-translate-x-1/2 ">
-              <div class="mx-auto max-w-[85rem] px-4 pb-10 pt-6 sm:px-6 lg:px-8">
+              <div class="mx-auto max-w-[85rem] px-4 pb-10 pt-20 sm:px-6 lg:px-8">
                 <div class="mx-auto mt-5 max-w-xl text-center">
                   <h1 class="block text-2xl font-bold text-white md:text-3xl lg:text-4xl ">
                     Cases
@@ -33,12 +33,12 @@ export default component$(() => {
                   return (
                     <>
                       <Link href={`/cases/${project.id}`}>
-                        <div class="group flex flex-col rounded-xl border border-gray-800 bg-white shadow-sm transition hover:shadow-md ">
+                        <div class="group flex flex-col rounded-xl border border-gray-800 bg-black shadow-sm transition hover:shadow-md ">
                           <div class="aspect-w-16 aspect-h-9 relative">
                             <Image
                               width={800}
                               height={600}
-                              class="h-60 w-full rounded-t-xl object-cover transition duration-700 group-hover:scale-95"
+                              class="h-60 w-full rounded-t-xl object-cover transition duration-300 group-hover:scale-95"
                               src={project.image}
                               alt="Image Description"
                             />
@@ -59,7 +59,7 @@ export default component$(() => {
                                     height={600}
                                     width={600}
                                     key={i}
-                                    class="h-6 w-auto  transition duration-700 group-hover:scale-95"
+                                    class="h-6 w-auto  transition duration-300 group-hover:scale-95"
                                     src={`${item}`}
                                     alt="Image Description"
                                   />
@@ -79,12 +79,12 @@ export default component$(() => {
                   return (
                     <>
                       <Link href={`/cases/${project.id}`}>
-                        <div class="group flex flex-col rounded-xl border border-gray-800 bg-white shadow-sm transition hover:shadow-md ">
+                        <div class="group flex flex-col rounded-xl border border-gray-800 bg-black shadow-sm transition hover:shadow-md ">
                           <div class="aspect-w-16 aspect-h-9 relative">
                             <Image
                               width={800}
                               height={600}
-                              class="h-60 w-full rounded-t-xl object-cover transition duration-700 group-hover:scale-95"
+                              class="h-60 w-full rounded-t-xl object-cover transition duration-300 group-hover:scale-95"
                               src={project.image}
                               alt="Image Description"
                             />
@@ -105,7 +105,7 @@ export default component$(() => {
                                     height={600}
                                     width={600}
                                     key={i}
-                                    class="h-6 w-auto  transition duration-700 group-hover:scale-95"
+                                    class="h-6 w-auto  transition duration-300 group-hover:scale-95"
                                     src={item}
                                     alt="Image Description"
                                   />
@@ -125,12 +125,12 @@ export default component$(() => {
                   return (
                     <>
                       <Link href={`/cases/${project.id}`}>
-                        <div class="group flex flex-col rounded-xl border border-gray-800 bg-white shadow-sm transition hover:shadow-md ">
+                        <div class="group flex flex-col rounded-xl border border-gray-800 bg-black shadow-sm transition hover:shadow-md ">
                           <div class="aspect-w-16 aspect-h-9 relative">
                             <Image
                               width={800}
                               height={600}
-                              class="h-60 w-full rounded-t-xl object-cover transition duration-700 group-hover:scale-95"
+                              class="h-60 w-full rounded-t-xl object-cover transition duration-300 group-hover:scale-95"
                               src={project.image}
                               alt="Image Description"
                             />
@@ -151,7 +151,7 @@ export default component$(() => {
                                     height={600}
                                     width={600}
                                     key={i}
-                                    class="h-6 w-auto  transition duration-700 group-hover:scale-95"
+                                    class="h-6 w-auto  transition duration-300 group-hover:scale-95"
                                     src={item}
                                     alt="Image Description"
                                   />
@@ -171,12 +171,12 @@ export default component$(() => {
                   return (
                     <>
                       <Link href={`/cases/${project.id}`}>
-                        <div class="group flex flex-col rounded-xl border border-gray-800 bg-white shadow-sm transition hover:shadow-md ">
+                        <div class="group flex flex-col rounded-xl border border-gray-800 bg-black shadow-sm transition hover:shadow-md ">
                           <div class="aspect-w-16 aspect-h-9 relative">
                             <Image
                               width={800}
                               height={600}
-                              class="h-60 w-full rounded-t-xl object-cover transition duration-700 group-hover:scale-95"
+                              class="h-60 w-full rounded-t-xl object-cover transition duration-300 group-hover:scale-95"
                               src={project.image}
                               alt="Image Description"
                             />
@@ -197,7 +197,7 @@ export default component$(() => {
                                     height={600}
                                     width={600}
                                     key={i}
-                                    class="h-6 w-auto  transition duration-700 group-hover:scale-95"
+                                    class="h-6 w-auto  transition duration-300 group-hover:scale-95"
                                     src={item}
                                     alt="Image Description"
                                   />
@@ -218,12 +218,12 @@ export default component$(() => {
                   return (
                     <>
                       <Link href={`/cases/${project.id}`}>
-                        <div class="group flex flex-col rounded-xl border border-gray-800 bg-white shadow-sm transition hover:shadow-md ">
+                        <div class="group flex flex-col rounded-xl border border-gray-800 bg-black shadow-sm transition hover:shadow-md ">
                           <div class="aspect-w-16 aspect-h-9 relative">
                             <Image
                               width={800}
                               height={600}
-                              class="h-60 w-full rounded-t-xl object-cover transition duration-700 group-hover:scale-95"
+                              class="h-60 w-full rounded-t-xl object-cover transition duration-300 group-hover:scale-95"
                               src={project.image}
                               alt="Image Description"
                             />
@@ -244,7 +244,7 @@ export default component$(() => {
                                     height={600}
                                     width={600}
                                     key={i}
-                                    class="h-6 w-auto  transition duration-700 group-hover:scale-95"
+                                    class="h-6 w-auto  transition duration-300 group-hover:scale-95"
                                     src={item}
                                     alt="Image Description"
                                   />
