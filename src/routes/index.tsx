@@ -3,7 +3,7 @@ import { DocumentHead, Link } from "@builder.io/qwik-city";
 import Header from "~/components/header";
 import { Image } from "@unpic/qwik";
 import Logos from "~/components/logos";
-import { logos } from "~/ultils/stories";
+import { logos } from "./../ultils/stories";
 
 export const head: DocumentHead = {
   title: "Broky.dev | Software developer",
@@ -23,9 +23,9 @@ export default component$(() => {
         <div class="bg-gradient-to-b from-sky-800/[.60] via-sky-800/[.10] w-screen">
           <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-32 space-y-8">
             <div class="flex justify-center md:mt-0 mt-20">
-              <a
+              <Link
                 class="group inline-block bg-white/[.05] hover:bg-white/[.1] border border-white/[.05] p-1 pl-4 rounded-full shadow-md"
-                href="https://tsxtech.nl/cases"
+                href="/cases"
               >
                 <p class="mr-2 inline-block text-white text-sm">
                   Check out my latest projects.
@@ -46,7 +46,7 @@ export default component$(() => {
                     />
                   </svg>
                 </span>
-              </a>
+              </Link>
             </div>
 
             <div class="max-w-3xl text-center mx-auto">
@@ -80,9 +80,9 @@ export default component$(() => {
             </div>
             <div class="text-white max-w-3xl flex gap-2 justify-center mx-auto">
               <div class="text-center">
-                <a
+                <Link
                   class="inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 shadow-lg shadow-transparent hover:shadow-blue-700/50 border border-transparent text-white text-sm font-medium rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white py-3 px-6 dark:focus:ring-offset-gray-800"
-                  href="https://tsxtech.nl/cases"
+                  href="/cases"
                 >
                   My projects
                   <svg
@@ -99,14 +99,15 @@ export default component$(() => {
                       stroke-linecap="round"
                     />
                   </svg>
-                </a>
+                </Link>
               </div>
-              <Link
+              <a
+                target="_blank"
                 class="inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 shadow-lg shadow-transparent hover:shadow-blue-700/50 border border-transparent text-white text-sm font-medium rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white py-3 px-6 dark:focus:ring-offset-gray-800"
-                href="https://tsxtech.nl/contact"
+                href="https://linkedin.com/markteekens"
               >
                 Contact me
-              </Link>
+              </a>
             </div>
           </div>
         </div>
