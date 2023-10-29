@@ -17,12 +17,12 @@ export default component$(() => {
           </div>
           <ul class="flex space-x-6">
             <li>
-              <a
+              <Link
                 class="md:text-xl text-lg hover:text-gray-300 transition"
-                href="https://tsxtech.nl/cases"
+                href="/cases"
               >
                 Portfolio
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
