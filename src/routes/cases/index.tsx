@@ -21,7 +21,7 @@ export default component$(() => {
               <div class="mx-auto max-w-[85rem] px-4 pb-10 pt-20 sm:px-6 lg:px-8">
                 <div class="mx-auto mt-5 max-w-xl text-center">
                   <h1 class="block text-2xl font-bold text-white md:text-3xl lg:text-4xl ">
-                    Cases
+                    My projects
                   </h1>
                 </div>
               </div>
@@ -45,10 +45,10 @@ export default component$(() => {
                           </div>
                           <div class="flex justify-between p-4 md:p-5">
                             <div>
-                              <p class="mt-2 text-xs uppercase text-black ">
+                              <p class="mt-2 text-xs uppercase text-white ">
                                 {project.category}
                               </p>
-                              <h3 class="mt-2 text-lg font-medium text-gray-800 group-hover:text-blue-600  dark:group-hover:text-black">
+                              <h3 class="mt-2 text-lg font-medium text-gray-100 group-hover:text-blue-600  dark:group-hover:text-white">
                                 {project.title}
                               </h3>
                             </div>
@@ -91,10 +91,10 @@ export default component$(() => {
                           </div>
                           <div class="flex justify-between p-4 md:p-5">
                             <div>
-                              <p class="mt-2 text-xs uppercase text-black ">
+                              <p class="mt-2 text-xs uppercase text-white ">
                                 {project.category}
                               </p>
-                              <h3 class="mt-2 text-lg font-medium text-gray-800 group-hover:text-blue-600  dark:group-hover:text-black">
+                              <h3 class="mt-2 text-lg font-medium text-gray-100 group-hover:text-blue-600  dark:group-hover:text-white">
                                 {project.title}
                               </h3>
                             </div>
@@ -137,10 +137,10 @@ export default component$(() => {
                           </div>
                           <div class="flex justify-between p-4 md:p-5">
                             <div>
-                              <p class="mt-2 text-xs uppercase text-black ">
+                              <p class="mt-2 text-xs uppercase text-white ">
                                 {project.category}
                               </p>
-                              <h3 class="mt-2 text-lg font-medium text-gray-800 group-hover:text-blue-600  dark:group-hover:text-black">
+                              <h3 class="mt-2 text-lg font-medium text-gray-100 group-hover:text-blue-600  dark:group-hover:text-white">
                                 {project.title}
                               </h3>
                             </div>
@@ -183,10 +183,10 @@ export default component$(() => {
                           </div>
                           <div class="flex justify-between p-4 md:p-5">
                             <div>
-                              <p class="mt-2 text-xs uppercase text-black ">
+                              <p class="mt-2 text-xs uppercase text-white ">
                                 {project.category}
                               </p>
-                              <h3 class="mt-2 text-lg font-medium text-gray-800 group-hover:text-blue-600  dark:group-hover:text-black">
+                              <h3 class="mt-2 text-lg font-medium text-gray-100 group-hover:text-blue-600  dark:group-hover:text-white">
                                 {project.title}
                               </h3>
                             </div>
@@ -230,10 +230,10 @@ export default component$(() => {
                           </div>
                           <div class="flex justify-between p-4 md:p-5">
                             <div>
-                              <p class="mt-2 text-xs uppercase text-black ">
+                              <p class="mt-2 text-xs uppercase text-white ">
                                 {project.category}
                               </p>
-                              <h3 class="mt-2 text-lg font-medium text-gray-800 group-hover:text-blue-600  dark:group-hover:text-black">
+                              <h3 class="mt-2 text-lg font-medium text-gray-100 group-hover:text-blue-600  dark:group-hover:text-white">
                                 {project.title}
                               </h3>
                             </div>
