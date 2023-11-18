@@ -10,7 +10,7 @@ const html = "/stack/html.png";
 
 export const logos = [ts,react,next,nuxt,go,vue,qwik,css,html]
 
-export const projects = [
+export const projects1 = [
   {
     id: 1,
     title: "Veta network",
