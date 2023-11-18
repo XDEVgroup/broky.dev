@@ -27,26 +27,26 @@ export default component$(() => {
 
             <div class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
               <div class="mb-10 grid gap-6 sm:grid-cols-2 lg:mb-14 lg:grid-cols-4">
-                {projects1.map((project: any) => {
+                {projects1.map((project) => {
                   return (
                     <>
                       <Link href={`/cases/${project.id}`}>
-                        <div class="group flex flex-col rounded-xl border border-gray-800 bg-black shadow-sm transition hover:shadow-md ">
-                          <div class="aspect-w-16 aspect-h-9 relative">
+                        <div class="group flex flex-col rounded-xl border border-gray-800 bg-white shadow-sm transition hover:shadow-md ">
+                          <div class="relative overflow-hidden rounded-t-lg ">
                             <Image
                               width={800}
                               height={600}
-                              class="h-60 w-full rounded-t-xl object-cover transition duration-300 group-hover:scale-95"
+                              class="h-60 w-80 rounded-t-xl object-cover transition-all hover:scale-105"
                               src={project.image}
                               alt="Image Description"
                             />
                           </div>
                           <div class="flex justify-between p-4 md:p-5">
                             <div>
-                              <p class="mt-2 text-xs uppercase text-white ">
+                              <p class="mt-2 text-xs uppercase text-black ">
                                 {project.category}
                               </p>
-                              <h3 class="mt-2 text-lg font-medium text-gray-100 group-hover:text-blue-600  dark:group-hover:text-white">
+                              <h3 class="mt-2 text-lg font-medium text-gray-800   ">
                                 {project.title}
                               </h3>
                             </div>
@@ -73,26 +73,26 @@ export default component$(() => {
               </div>
 
               <div class="mb-10 grid gap-6 sm:grid-cols-2 lg:mb-14 lg:grid-cols-4">
-                {projects2.map((project: any) => {
+              {projects2.map((project) => {
                   return (
                     <>
                       <Link href={`/cases/${project.id}`}>
-                        <div class="group flex flex-col rounded-xl border border-gray-800 bg-black shadow-sm transition hover:shadow-md ">
-                          <div class="aspect-w-16 aspect-h-9 relative">
+                        <div class="group flex flex-col rounded-xl border border-gray-800 bg-white shadow-sm transition hover:shadow-md ">
+                          <div class="relative overflow-hidden rounded-t-lg ">
                             <Image
                               width={800}
                               height={600}
-                              class="h-60 w-full rounded-t-xl object-cover transition duration-300 group-hover:scale-95"
+                              class="h-60 w-80 rounded-t-xl object-cover transition-all hover:scale-105"
                               src={project.image}
                               alt="Image Description"
                             />
                           </div>
                           <div class="flex justify-between p-4 md:p-5">
                             <div>
-                              <p class="mt-2 text-xs uppercase text-white ">
+                              <p class="mt-2 text-xs uppercase text-black ">
                                 {project.category}
                               </p>
-                              <h3 class="mt-2 text-lg font-medium text-gray-100 group-hover:text-blue-600  dark:group-hover:text-white">
+                              <h3 class="mt-2 text-lg font-medium text-gray-800   ">
                                 {project.title}
                               </h3>
                             </div>
@@ -104,7 +104,7 @@ export default component$(() => {
                                     width={600}
                                     key={i}
                                     class="h-6 w-auto  transition duration-300 group-hover:scale-95"
-                                    src={item}
+                                    src={`${item}`}
                                     alt="Image Description"
                                   />
                                 );
@@ -119,26 +119,26 @@ export default component$(() => {
               </div>
 
               <div class="mb-10 grid gap-6 sm:grid-cols-2 lg:mb-14 lg:grid-cols-4">
-                {projects3.map((project: any) => {
+              {projects3.map((project) => {
                   return (
                     <>
                       <Link href={`/cases/${project.id}`}>
-                        <div class="group flex flex-col rounded-xl border border-gray-800 bg-black shadow-sm transition hover:shadow-md ">
-                          <div class="aspect-w-16 aspect-h-9 relative">
+                        <div class="group flex flex-col rounded-xl border border-gray-800 bg-white shadow-sm transition hover:shadow-md ">
+                          <div class="relative overflow-hidden rounded-t-lg ">
                             <Image
                               width={800}
                               height={600}
-                              class="h-60 w-full rounded-t-xl object-cover transition duration-300 group-hover:scale-95"
+                              class="h-60 w-80 rounded-t-xl object-cover transition-all hover:scale-105"
                               src={project.image}
                               alt="Image Description"
                             />
                           </div>
                           <div class="flex justify-between p-4 md:p-5">
                             <div>
-                              <p class="mt-2 text-xs uppercase text-white ">
+                              <p class="mt-2 text-xs uppercase text-black ">
                                 {project.category}
                               </p>
-                              <h3 class="mt-2 text-lg font-medium text-gray-100 group-hover:text-blue-600  dark:group-hover:text-white">
+                              <h3 class="mt-2 text-lg font-medium text-gray-800   ">
                                 {project.title}
                               </h3>
                             </div>
@@ -150,7 +150,7 @@ export default component$(() => {
                                     width={600}
                                     key={i}
                                     class="h-6 w-auto  transition duration-300 group-hover:scale-95"
-                                    src={item}
+                                    src={`${item}`}
                                     alt="Image Description"
                                   />
                                 );
