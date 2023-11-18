@@ -10,7 +10,7 @@ const html = "/stack/html.png";
 
 export const logos = [ts,react,next,nuxt,go,vue,qwik,css,html]
 
-export const projects1 = [
+export const projects = [
   {
     id: 1,
     title: "Veta network",
@@ -130,12 +130,21 @@ export const projects3 = [
     title: "Course God",
     category: "Application",
     image: "/websites/coursegod.png",
-    stack: [nuxt, vue, ts],
+    stack: [qwik, ts],
     website: "https://coursegod.com",
     desc: "Coursegod is een project die zich focust op het verkopen van online courses, en dat met name in de money making branche. Het bedrijf heeft ons gevraagt een super snel framework te gebruiken, namelijk QwikJS. Doordat qwik alleen javascript execute in de browser wanneer het noodzakelijk is. Is deze website direct geladen en interactief.",
     desc2:
       "Naast de landing page, bestaat het uit een dashboard, waar gebruikers kunnen inloggen, en abonnementen kunnen kopen doormiddel van de api van stripe. Ook kun je hier cursussen bekijken en blogs lezen.",
   },
+  {
+    id: 12,
+    title: "VETA NETWORK V2",
+    category: "Application / Dashboard",
+    image: "/websites/veta-network2.webp",
+    stack: [next, react, ts],
+    website: "https://veta-synergy.vercel.app/",
+    desc: "Veta network is een internationaal bedrijf dat zich heeft gefocust op het connecten van muziekartiesten met influencers en visa versa. Daarnaast helpt het artiesten om zich te promoten via haar netwerk aan social media en spotify. Het bedrijf heeft zich gespecialiseerd in video en audio en heeft internationale ervaring met het aanleveren van artiesten over de hele wereld. ",
+    desc2:
+      "De applicatie die TSX heeft gemaakt voor VETA is gebaseerd op het connecten van artiesten en influencers. Je kunt door het gebruik van de applicatie muziek albums uploaden en aanvragen, die vervolgens worden goedgekeurd en na een procedure van meerdere weken op Spotify kunnen worden toegevoegd. De artiest kan een influencer uit de connecties van VETA uitzoeken om zo tot een geweldig resultaat te komen.",
+  },
 ];
-export const projects4 = [];
-export const projects5 = [];
