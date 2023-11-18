@@ -64,3 +64,8 @@ body {
   padding: 0;
   line-height: inherit;
 }
+
+*{
+  scroll-behavior: smooth;
+  transition-duration:500ms ;
+  }
