@@ -4,8 +4,6 @@ import {
   projects1,
   projects2,
   projects3,
-  projects4,
-  projects5,
 } from "../../../ultils/stories";
 import { Image } from "@unpic/qwik";
 import Header from "~/components/header";
@@ -23,8 +21,6 @@ export default component$(() => {
       ...projects1,
       ...projects2,
       ...projects3,
-      ...projects4,
-      ...projects5
     );
 
     const data = totalproject?.filter((item: any) => item.id === Number(id));
