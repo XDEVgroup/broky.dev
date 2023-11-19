@@ -1,10 +1,10 @@
 import { component$ } from "@builder.io/qwik";
-import { Link, routeLoader$ } from "@builder.io/qwik-city";
+import { Link, routeLoader$, useLocation } from "@builder.io/qwik-city";
 import {
   projects1,
   projects2,
   projects3,
-} from "../../../ultils/stories";
+} from "../../../../ultils/stories";
 import { Image } from "@unpic/qwik";
 
 export const useQuery = routeLoader$(({ params }) => {
@@ -12,6 +12,7 @@ export const useQuery = routeLoader$(({ params }) => {
 });
 
 export default component$(() => {
+  const loc = useLocation();
   const queryData = useQuery();
 
   const calculateCurrentId = (id: string) => {
@@ -34,7 +35,7 @@ export default component$(() => {
          
         <div class="flex flex-col justify-center p-4 lg:w-3/6">
           <div class="py-6 text-sky-700">
-            <Link class="underline" href="/">Go back</Link>
+            <Link class="underline" href={`/${loc.params.locale}/cases`}>{$localize`:@@back:`}</Link>
           </div>
           <span class="uppercase">{item?.category}</span>
           <a href={item?.website} class="z-20 text-purple-500">
@@ -52,25 +53,23 @@ export default component$(() => {
               alt={item?.title}
             />
             <div class="duration-400 absolute left-0 top-0 flex h-80 w-full items-center justify-center bg-transparent text-xl font-bold  uppercase text-transparent transition  group-hover:bg-purple-500   group-hover:text-black ">
-              Bekijk website
+            {$localize`:@@website:`}
             </div>
           </a>
         </div>
         <div class=" flex flex-col lg:w-3/6 w-full justify-center ">
-          <div class=" mb-20 flex flex-col gap-4 px-4 lg:mb-0 lg:px-0">
+          <div class=" flex flex-col gap-4 ">
             {" "}
-            <span class="text-lg  uppercase">Case story</span>
+            <span class="text-lg uppercase">Case story</span>
             <p class="text-md font-extralight">{item?.desc}</p>
             <p class="text-md font-extralight">{item?.desc2}</p>
           </div>
-          <div class="flex items-center gap-2 py-6 ">
+          <div class="flex items-center gap-2  py-6 ">
             {item?.stack.map((item: string, i: number) => {
               return (
-                <Image
-                  height={600}
-                  width={600}
+                <img
                   key={i}
-                  class="h-16 w-auto  transition duration-700 group-hover:scale-95"
+                  class="h-12 w-auto transition duration-700 group-hover:scale-95"
                   src={item}
                   alt="Image Description"
                 />

@@ -3,7 +3,7 @@ import {
   projects1,
   projects2,
   projects3,
-} from "../../ultils/stories";
+} from "../../../ultils/stories";
 import { Image } from "@unpic/qwik";
 import { component$ } from "@builder.io/qwik";
 import Header from "~/components/header";
@@ -19,7 +19,7 @@ export default component$(() => {
               <div class="mx-auto max-w-[85rem] px-4 pb-10 pt-20 sm:px-6 lg:px-8">
                 <div class="mx-auto mt-5 max-w-xl text-center">
                   <h1 class="block text-2xl font-bold text-white md:text-3xl lg:text-4xl ">
-                    My projects
+                  {$localize`:@@myprojects:`}
                   </h1>
                 </div>
               </div>
@@ -30,7 +30,7 @@ export default component$(() => {
                 {projects1.map((project) => {
                   return (
                     <>
-                      <Link href={`/cases/${project.id}`}>
+                      <Link href={`${project.id}`}>
                         <div class="group flex flex-col rounded-xl border border-gray-800 bg-white shadow-sm transition hover:shadow-md ">
                           <div class="relative overflow-hidden rounded-t-lg ">
                             <Image
@@ -76,7 +76,7 @@ export default component$(() => {
               {projects2.map((project) => {
                   return (
                     <>
-                      <Link href={`/cases/${project.id}`}>
+                      <Link href={`${project.id}`}>
                         <div class="group flex flex-col rounded-xl border border-gray-800 bg-white shadow-sm transition hover:shadow-md ">
                           <div class="relative overflow-hidden rounded-t-lg ">
                             <Image
@@ -122,7 +122,7 @@ export default component$(() => {
               {projects3.map((project) => {
                   return (
                     <>
-                      <Link href={`/cases/${project.id}`}>
+                      <Link href={`${project.id}`}>
                         <div class="group flex flex-col rounded-xl border border-gray-800 bg-white shadow-sm transition hover:shadow-md ">
                           <div class="relative overflow-hidden rounded-t-lg ">
                             <Image

@@ -1,7 +1,9 @@
 import { component$, useStore } from "@builder.io/qwik";
-import { Link } from "@builder.io/qwik-city";
+import { Link, useLocation } from "@builder.io/qwik-city";
 
 export default component$(() => {
+  const loc = useLocation()
+  console.log(loc)
   const store = useStore({
     scrolled: false,
   });
@@ -33,11 +35,15 @@ export default component$(() => {
           <ul class="flex space-x-6">
             <li>
               <Link
-              class={store.scrolled ? "md:text-xl text-lg hover:text-gray-300 transition" : "md:text-2xl text-2xl hover:text-gray-300 transition"}
-                href="/cases"
+              class={store.scrolled ? "md:text-xl text-md hover:text-gray-300 transition" : "md:text-xl text-md hover:text-gray-300 transition"}
+                href="cases"
               >
                 Portfolio
               </Link>
+            </li>
+            <li class="flex gap-1">
+              {loc.url?.pathname.includes("cases") ? <a href="/nl/cases">NL</a> :  <a href="/nl/">NL</a>}
+              {loc.url?.pathname.includes("cases") ? <a href="/en/cases">EN</a> : <a href="/en/">EN</a>}
             </li>
           </ul>
         </div>

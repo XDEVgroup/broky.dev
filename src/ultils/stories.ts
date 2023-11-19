@@ -18,9 +18,9 @@ export const projects1 = [
     image: "/websites/vetaappwebsite.webp",
     stack: [next, react, ts],
     website: "https://veta-zackcgl.vercel.app/",
-    desc: "Veta network is een internationaal bedrijf dat zich heeft gefocust op het connecten van muziekartiesten met influencers en visa versa. Daarnaast helpt het artiesten om zich te promoten via haar netwerk aan social media en spotify. Het bedrijf heeft zich gespecialiseerd in video en audio en heeft internationale ervaring met het aanleveren van artiesten over de hele wereld. ",
+    desc: `${$localize`:@@vetadesc:`}`,
     desc2:
-      "De applicatie die TSX heeft gemaakt voor VETA is gebaseerd op het connecten van artiesten en influencers. Je kunt door het gebruik van de applicatie muziek albums uploaden en aanvragen, die vervolgens worden goedgekeurd en na een procedure van meerdere weken op Spotify kunnen worden toegevoegd. De artiest kan een influencer uit de connecties van VETA uitzoeken om zo tot een geweldig resultaat te komen.",
+      `${$localize`:@@vetadesc2:`}`,
   },
 
   {
