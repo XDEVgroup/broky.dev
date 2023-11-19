@@ -1,12 +1,11 @@
 import { component$ } from "@builder.io/qwik";
-import { routeLoader$ } from "@builder.io/qwik-city";
+import { Link, routeLoader$ } from "@builder.io/qwik-city";
 import {
   projects1,
   projects2,
   projects3,
 } from "../../../ultils/stories";
 import { Image } from "@unpic/qwik";
-import Header from "~/components/header";
 
 export const useQuery = routeLoader$(({ params }) => {
   return { id: params.id };
@@ -30,9 +29,13 @@ export default component$(() => {
   const item = data[0];
   return (
     <>
-      <Header />
+     
       <div class="mx-auto grid min-h-screen w-11/12 grid-cols-1 gap-4 lg:flex ">
-        <div class="-mt-10 flex h-screen w-full flex-col justify-center p-4 lg:w-3/6">
+         
+        <div class="flex flex-col justify-center p-4 lg:w-3/6">
+          <div class="py-6 text-sky-700">
+            <Link class="underline" href="/">Go back</Link>
+          </div>
           <span class="uppercase">{item?.category}</span>
           <a href={item?.website} class="z-20 text-purple-500">
             {item?.website}
@@ -53,14 +56,14 @@ export default component$(() => {
             </div>
           </a>
         </div>
-        <div class=" flex h-screen w-full flex-col items-end justify-end gap-10 pr-4 md:pr-10 lg:w-3/6 xl:pb-20 ">
+        <div class=" flex flex-col lg:w-3/6 w-full justify-center ">
           <div class=" mb-20 flex flex-col gap-4 px-4 lg:mb-0 lg:px-0">
             {" "}
             <span class="text-lg  uppercase">Case story</span>
             <p class="text-md font-extralight">{item?.desc}</p>
             <p class="text-md font-extralight">{item?.desc2}</p>
           </div>
-          <div class="flex items-center gap-2 ">
+          <div class="flex items-center gap-2 py-6 ">
             {item?.stack.map((item: string, i: number) => {
               return (
                 <Image
