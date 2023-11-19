@@ -2,7 +2,6 @@ import { component$ } from "@builder.io/qwik";
 import type { DocumentHead} from "@builder.io/qwik-city";
 import { Link } from "@builder.io/qwik-city";
 import Header from "~/components/header";
-import { Image } from "@unpic/qwik";
 import Logos from "~/components/logos";
 import { logos } from "../../ultils/stories";
 
@@ -105,6 +104,8 @@ export default component$(() => {
               
               </a>
             </div>
+           
+
           </div>
         </div>
       </div>
