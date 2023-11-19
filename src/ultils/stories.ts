@@ -162,8 +162,8 @@ export const projects4 = [{
 
 },
 {
-  id: 13,
-  title: "Tsx Tech",
+  id: 14,
+  title: "TSX Technology Group",
   category: "Landing page",
   image: "/websites/tsxtech.webp",
   stack: [next, react, ts],
