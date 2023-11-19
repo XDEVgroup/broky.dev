@@ -148,3 +148,28 @@ export const projects3 = [
       "De applicatie die TSX heeft gemaakt voor VETA is gebaseerd op het connecten van artiesten en influencers. Je kunt door het gebruik van de applicatie muziek albums uploaden en aanvragen, die vervolgens worden goedgekeurd en na een procedure van meerdere weken op Spotify kunnen worden toegevoegd. De artiest kan een influencer uit de connecties van VETA uitzoeken om zo tot een geweldig resultaat te komen.",
   },
 ];
+
+export const projects4 = [{
+  id: 13,
+  title: "Empty Store",
+  category: "Application / Dashboard",
+  image: "/websites/voorbeeldstore.webp",
+  stack: [next, react, ts],
+  website: "https://cannabis-pink.vercel.app/",
+  desc: "No description available",
+  desc2:
+    "",
+
+},
+{
+  id: 13,
+  title: "Tsx Tech",
+  category: "Landing page",
+  image: "/websites/tsxtech.webp",
+  stack: [next, react, ts],
+  website: "https://tsxtech.nl",
+  desc: "No description available",
+  desc2:
+    "",
+
+}]
