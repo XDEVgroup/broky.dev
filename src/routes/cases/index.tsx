@@ -36,7 +36,7 @@ export default component$(() => {
                             <Image
                               width={800}
                               height={600}
-                              class="h-60 w-80 rounded-t-xl object-cover transition-all hover:scale-105"
+                              class="h-60 w-full rounded-t-xl object-cover transition-all hover:scale-105"
                               src={project.image}
                               alt="Image Description"
                             />
