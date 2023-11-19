@@ -52,14 +52,7 @@ export default component$(() => {
 
             <div class="max-w-3xl text-center mx-auto">
               <div class="flex items-center justify-center">
-                <Image
-                  layout=""
-                  width={800}
-                  height={600}
-                  src="/markt.png"
-                  alt=""
-                  class="h-28 w-28 -rotate-12  transition duration-400 rounded-full border-4 border-indigo-400 "
-                />
+              <div class="github-profile-badge" data-user="markjkaem"></div>
               </div>
               <h1 class="block font-medium text-gray-200 text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
               {$localize`:@@hey:`}
