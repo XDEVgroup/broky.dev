@@ -177,7 +177,7 @@ export const projects4 = [{
 {
   id: 9999,
   title: "Your website?",
-  category: "",
+  category: "By Mark Teekens",
   image: "/websites/yourproject.webp",
   stack: [vue, go, react, ts],
   website: "https://www.linkedin.com/in/markteekens/",
