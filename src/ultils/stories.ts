@@ -173,4 +173,16 @@ export const projects4 = [{
   desc2:
     "",
 
+},
+{
+  id: 9999,
+  title: "Your website?",
+  category: "",
+  image: "/websites/yourproject.webp",
+  stack: [vue, go, react, ts],
+  website: "https://www.linkedin.com/in/markteekens/",
+  desc: "Hire me now by pressing the link.",
+  desc2:
+    "",
+
 }]
