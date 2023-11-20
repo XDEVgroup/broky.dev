@@ -69,19 +69,40 @@ export const projects2 = [
     desc2:
       "Online with you heeft ons gevraagd een website te maken, omdat wij een verfrissende kijk hebben op het bedrijf vanuit een ander standpunt als die zij voor oog hadden",
   },
-
   {
     id: 6,
-    title: "Broky",
-    category: "Website",
-    image: "/websites/brokyweb.jpg",
-    stack: [qwik, ts],
-    website: "https://broky.dev/",
-    desc: "De Eigenaar van TSX Software is Mark Teekens. Mark is Software developer en geboren in Gouda, in Nederland. Deze website gaat over zijn portfolio en contact. De applicatie is gemaakt met Qwik. Qwik is een lightning fast Javascript framework die bekend staat om haar resumability. Dit betekend dat het executen van javascript wordt gepauzeerd. Javascript wordt alleen ingeladen als het nodig is waardoor je extreem snelle resultaten krijgt.",
-    desc2: "",
+    title: "Cheap Software Licence",
+    category: "Application",
+    image: "/websites/cheapsoftwarelicenceapp.png",
+    stack: [nuxt, vue, ts],
+    website: "https://cheapsoftwarelicence.com",
+    desc: "Wegens privacy redenen is er geen story. Je kunt de website gewoon bezoeken.",
+    desc2:
+      "",
   },
   {
     id: 7,
+    title: "Course God",
+    category: "Application",
+    image: "/websites/coursegod.png",
+    stack: [qwik, ts],
+    website: "https://coursegod.com",
+    desc: "Coursegod is een project die zich focust op het verkopen van online courses, en dat met name in de money making branche. Het bedrijf heeft ons gevraagt een super snel framework te gebruiken, namelijk QwikJS. Doordat qwik alleen javascript execute in de browser wanneer het noodzakelijk is. Is deze website direct geladen en interactief.",
+    desc2:
+      "Naast de landing page, bestaat het uit een dashboard, waar gebruikers kunnen inloggen, en abonnementen kunnen kopen doormiddel van de api van stripe. Ook kun je hier cursussen bekijken en blogs lezen.",
+  },
+  {
+    id: 8,
+    title: "Broky",
+    category: "Website",
+    image: "/websites/brokydev.png",
+    stack: [qwik, ts],
+    website: "https://broky.dev/",
+    desc: "Mark is Software developer en geboren in Gouda, in Nederland. Deze website gaat over zijn portfolio en projecten. De applicatie is gemaakt met Qwik. Qwik is een lightning fast Javascript framework die bekend staat om haar resumability. Dit betekend dat het executen van javascript wordt gepauzeerd. Javascript wordt alleen ingeladen als het nodig is waardoor je extreem snelle resultaten krijgt.",
+    desc2: "",
+  },
+  {
+    id: 9,
     title: "Crew stars",
     category: "Website",
     image: "/websites/crewstarswebsite.jpg",
@@ -91,7 +112,7 @@ export const projects2 = [
     desc2: "Het bedrijf heeft TSX de opdracht gegeven een landing page te maken die interactief is voor nieuwe potentiele werknemers, maar ook informatie biedt aan toekomstige partners of huidige partners. Door de animaties en simpele layout hebben wij een interactieve website kunnen maken waar crewstars op heeft kunnen bouwen.",
   },
   {
-    id: 8,
+    id: 10,
     title: "Babachoulz",
     category: "Applicatie",
     image: "/websites/babawebsite.png",
@@ -104,7 +125,7 @@ export const projects2 = [
 ];
 export const projects3 = [
   {
-    id: 9,
+    id: 11,
     title: "Salud Care",
     category: "Website & admin panel",
     image: "/websites/ultracura.png",
@@ -114,28 +135,7 @@ export const projects3 = [
     desc2:
       "Het bedrijf heeft TSX de opdracht gegeven om een landing page te bouwen met meerdere contact pagina's. Er is gekozen voor groene en roze kleuren om de style van de onderneming aan te houden. De applicatie is gemaakt met NextJS en Typescript. Ondernemers kunnen via het inlogpartaal inloggen om gegevens bij te houden. Er is tijdens het maken van de website veel bedacht en gediscusseerd om het zo goed mogelijk naar wens te maken, en iedereen was zeer blij met het eindresultaat.",
   },
-  {
-    id: 10,
-    title: "Cheap Software Licence",
-    category: "Application",
-    image: "/websites/cheapsoftwarelicenceapp.png",
-    stack: [nuxt, vue, ts],
-    website: "https://cheapsoftwarelicence.com",
-    desc: "Wegens privacy redenen is er geen story. Je kunt de website gewoon bezoeken.",
-    desc2:
-      "",
-  },
-  {
-    id: 11,
-    title: "Course God",
-    category: "Application",
-    image: "/websites/coursegod.png",
-    stack: [qwik, ts],
-    website: "https://coursegod.com",
-    desc: "Coursegod is een project die zich focust op het verkopen van online courses, en dat met name in de money making branche. Het bedrijf heeft ons gevraagt een super snel framework te gebruiken, namelijk QwikJS. Doordat qwik alleen javascript execute in de browser wanneer het noodzakelijk is. Is deze website direct geladen en interactief.",
-    desc2:
-      "Naast de landing page, bestaat het uit een dashboard, waar gebruikers kunnen inloggen, en abonnementen kunnen kopen doormiddel van de api van stripe. Ook kun je hier cursussen bekijken en blogs lezen.",
-  },
+ 
   {
     id: 12,
     title: "VETA NETWORK V2",
