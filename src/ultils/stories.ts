@@ -101,6 +101,9 @@ export const projects2 = [
     desc: "Mark is Software developer en geboren in Gouda, in Nederland. Deze website gaat over zijn portfolio en projecten. De applicatie is gemaakt met Qwik. Qwik is een lightning fast Javascript framework die bekend staat om haar resumability. Dit betekend dat het executen van javascript wordt gepauzeerd. Javascript wordt alleen ingeladen als het nodig is waardoor je extreem snelle resultaten krijgt.",
     desc2: "",
   },
+  
+];
+export const projects3 = [
   {
     id: 9,
     title: "Crew stars",
@@ -122,8 +125,6 @@ export const projects2 = [
     desc2:
       "Het bedrijf heeft TSX de opdracht gegeven een interactieve webshop te bouwen die een aantal van zijn kunstwerken ten toon kon stellen. Kunst kan worden georderd en meteen worden afgerekend via de stripe payment intergratie. De webapplicatie is uiters performant en is gemaakt met Nuxt3, Typescript en onderliggend Vue.",
   },
-];
-export const projects3 = [
   {
     id: 11,
     title: "Salud Care",
