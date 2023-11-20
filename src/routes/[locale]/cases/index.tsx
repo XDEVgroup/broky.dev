@@ -8,6 +8,7 @@ import {
 import { Image } from "@unpic/qwik";
 import { component$ } from "@builder.io/qwik";
 import Header from "~/components/header";
+import Partners from "~/components/partners";
 
 export default component$(() => {
   return (
@@ -206,7 +207,7 @@ export default component$(() => {
                   );
                 })}
               </div>
-
+<Partners />
               
 
               

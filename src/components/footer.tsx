@@ -3,8 +3,8 @@ import { Link } from "@builder.io/qwik-city";
 
 export default component$(() => {
   return (
-    <footer>
-      <div class=" w-screen py-10 px-4 sm:px-6 lg:px-8 mx-auto text-white bg-black">
+    <footer class="w-screen">
+      <div class="  py-10 px-4 sm:px-6 lg:px-8 mx-auto text-white bg-black">
         <div class="grid grid-cols-1 md:grid-cols-3 items-center gap-5 text-center">
           <div>
             <Link

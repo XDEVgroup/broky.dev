@@ -4,6 +4,7 @@ import { Link } from "@builder.io/qwik-city";
 import Header from "~/components/header";
 import Logos from "~/components/logos";
 import { logos } from "../../ultils/stories";
+import Partners from "~/components/partners";
 
 export const head: DocumentHead = {
   title: "Broky.dev | Software developer",
@@ -19,7 +20,7 @@ export default component$(() => {
   return (
     <>
       <Header />
-      <div class="flex min-h-screen   bg-black">
+      <div class="flex min-h-screen w-screen   bg-black">
         <div class="bg-gradient-to-b from-sky-800/[.60] via-sky-800/[.10] w-screen">
           <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-32 space-y-8">
             <div class="flex justify-center md:mt-0 mt-20">
@@ -104,7 +105,7 @@ export default component$(() => {
               
               </a>
             </div>
-           
+           <Partners />
 
           </div>
         </div>

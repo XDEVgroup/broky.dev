@@ -7,6 +7,7 @@ import {
   projects4
 } from "../../../../ultils/stories";
 import { Image } from "@unpic/qwik";
+import Partners from "~/components/partners";
 
 export const useQuery = routeLoader$(({ params }) => {
   return { id: params.id };
@@ -79,7 +80,9 @@ export default component$(() => {
             })}
           </div>
         </div>
+       
       </div>
+      <Partners subclass="invert"/>
     </>
   );
 });
