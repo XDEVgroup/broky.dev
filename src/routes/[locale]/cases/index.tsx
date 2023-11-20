@@ -54,9 +54,8 @@ export default component$(() => {
                             <div class="grid grid-cols-2 gap-1">
                               {project.stack.map((item: string, i: number) => {
                                 return (
-                                  <Image
-                                    height={600}
-                                    width={600}
+                                  <img
+                                   
                                     key={i}
                                     class="h-6 w-auto  transition duration-300 group-hover:scale-95"
                                     src={`${item}`}
@@ -100,9 +99,8 @@ export default component$(() => {
                             <div class="grid grid-cols-2 gap-1">
                               {project.stack.map((item: string, i: number) => {
                                 return (
-                                  <Image
-                                    height={600}
-                                    width={600}
+                                  <img
+                                    
                                     key={i}
                                     class="h-6 w-auto  transition duration-300 group-hover:scale-95"
                                     src={`${item}`}
@@ -192,9 +190,8 @@ export default component$(() => {
                             <div class="grid grid-cols-2 gap-1">
                               {project.stack.map((item: string, i: number) => {
                                 return (
-                                  <Image
-                                    height={600}
-                                    width={600}
+                                  <img
+                                   
                                     key={i}
                                     class="h-6 w-auto  transition duration-300 group-hover:scale-95"
                                     src={`${item}`}
