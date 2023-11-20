@@ -11,7 +11,7 @@ export const head: DocumentHead = {
     {
       name: "description",
       content:
-        "My name is Mark aka Broky or Zacky and I'm a front end developer specialized in react, vue and qwik",
+        "My name is Mark and I'm a Software developer specialized in typescript and javascript.",
     },
   ],
 };
@@ -51,7 +51,7 @@ export default component$(() => {
 
             <div class="max-w-3xl text-center mx-auto">
               <div class="flex items-center justify-center">
-              <div class="github-profile-badge" data-user="markjkaem"></div>
+              <img src="/markt.png" alt="" class="h-14 w-14 rounded-full"/>
               </div>
               <h1 class="block font-medium text-gray-200 text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
               {$localize`:@@hey:`}
