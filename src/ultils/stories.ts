@@ -115,7 +115,7 @@ export const projects2 = [
     id: 10,
     title: "Babachoulz",
     category: "Applicatie",
-    image: "/websites/babawebsite.png",
+    image: "/websites/babachoulzpage.png",
     stack: [nuxt, vue, ts],
     website: "https://babachoulz.com/",
     desc: "Babachulz is een kunstenaar die een frisse kijk heeft op artwork. Verkleed in een zwart outfit met bivakmuts staat hij op foto's van een groot aantal kunstwerken. Zijn collectie bestaat vooral uit met kleur geverfde schilderijen, maar ook digitale fictieve figuren of personen.",
