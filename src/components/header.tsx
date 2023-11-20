@@ -3,7 +3,6 @@ import { Link, useLocation } from "@builder.io/qwik-city";
 
 export default component$(() => {
   const loc = useLocation()
-  console.log(loc)
   const store = useStore({
     scrolled: false,
   });
