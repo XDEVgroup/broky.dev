@@ -3,7 +3,7 @@ import type { DocumentHead} from "@builder.io/qwik-city";
 import { Link } from "@builder.io/qwik-city";
 import Header from "~/components/header";
 import Logos from "~/components/logos";
-import { logos } from "../../ultils/stories";
+import { logos } from "../../utils/projects";
 import Partners from "~/components/partners";
 
 export const head: DocumentHead = {

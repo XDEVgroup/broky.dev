@@ -10,7 +10,7 @@ const html = "/stack/html.png";
 
 export const logos = [ts,react,next,nuxt,go,vue,qwik,css,html]
 
-export const projects1 = [
+export const projects = [
   {
     id: 1,
     title: "Veta network",
@@ -56,8 +56,6 @@ export const projects1 = [
     desc2:
       "Door de blogs te koppelen aan een headless CMS kunnen de werknemers van Ruby Finance blogs op een vrij gemakkelijke manier aanmaken. De blogs laden snel waardoor deze door crawlers van Google gemakkelijk te vinden zijn. De website is in twee talen, namelijk Engels en Nederlands. Daarnaast worden nieuwe aanvragen niet alleen gestuurd per email, maar worden deze ook opgeslagen in een sql database.",
   },
-];
-export const projects2 = [
   {
     id: 5,
     title: "Online with you",
@@ -101,9 +99,6 @@ export const projects2 = [
     desc: "Mark is Software developer en geboren in Gouda, in Nederland. Deze website gaat over zijn portfolio en projecten. De applicatie is gemaakt met Qwik. Qwik is een lightning fast Javascript framework die bekend staat om haar resumability. Dit betekend dat het executen van javascript wordt gepauzeerd. Javascript wordt alleen ingeladen als het nodig is waardoor je extreem snelle resultaten krijgt.",
     desc2: "",
   },
-  
-];
-export const projects3 = [
   {
     id: 9,
     title: "Crew stars",
@@ -148,41 +143,41 @@ export const projects3 = [
     desc2:
       "De applicatie die TSX heeft gemaakt voor VETA is gebaseerd op het connecten van artiesten en influencers. Je kunt door het gebruik van de applicatie muziek albums uploaden en aanvragen, die vervolgens worden goedgekeurd en na een procedure van meerdere weken op Spotify kunnen worden toegevoegd. De artiest kan een influencer uit de connecties van VETA uitzoeken om zo tot een geweldig resultaat te komen.",
   },
+  {
+    id: 13,
+    title: "Empty Store",
+    category: "Application / Dashboard",
+    image: "/websites/voorbeeldstore.webp",
+    stack: [next, react, ts],
+    website: "https://cannabis-pink.vercel.app/",
+    desc: "No description available",
+    desc2:
+      "",
+  
+  },
+  {
+    id: 14,
+    title: "TSX Tech",
+    category: "Landing page",
+    image: "/websites/tsxtech.webp",
+    stack: [next, react, ts],
+    website: "https://tsxtech.nl",
+    desc: "No description available",
+    desc2:
+      "",
+  
+  },
+  {
+    id: 9999,
+    title: "Your website?",
+    category: "By Mark Teekens",
+    image: "/websites/yourproject.webp",
+    stack: [vue, go, react, ts],
+    website: "https://www.linkedin.com/in/markteekens/",
+    desc: "Hire me now by pressing the link.",
+    desc2:
+      "",
+  
+  }
 ];
 
-export const projects4 = [{
-  id: 13,
-  title: "Empty Store",
-  category: "Application / Dashboard",
-  image: "/websites/voorbeeldstore.webp",
-  stack: [next, react, ts],
-  website: "https://cannabis-pink.vercel.app/",
-  desc: "No description available",
-  desc2:
-    "",
-
-},
-{
-  id: 14,
-  title: "TSX Tech",
-  category: "Landing page",
-  image: "/websites/tsxtech.webp",
-  stack: [next, react, ts],
-  website: "https://tsxtech.nl",
-  desc: "No description available",
-  desc2:
-    "",
-
-},
-{
-  id: 9999,
-  title: "Your website?",
-  category: "By Mark Teekens",
-  image: "/websites/yourproject.webp",
-  stack: [vue, go, react, ts],
-  website: "https://www.linkedin.com/in/markteekens/",
-  desc: "Hire me now by pressing the link.",
-  desc2:
-    "",
-
-}]
