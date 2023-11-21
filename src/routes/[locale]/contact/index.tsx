@@ -3,37 +3,36 @@ import { Form, routeAction$ } from "@builder.io/qwik-city";
 import nodemailer from "nodemailer";
 import Header from "~/components/header";
 
-const sendEmail = async (message: string, email: string) => {
-  const transporter = nodemailer.createTransport({
-    host: "mail.trenddad.site",
-    port: 465,
-    secure: true,
-    auth: {
-      user: "info@trenddad.site", // generated ethereal user
-      pass: process.env.EMAILPASS, // generated ethereal password
-    },
-  });
-
-  await transporter.sendMail({
-    from: "Broky.dev <info@trenddad.site>", // sender address
-    to: "mark.teekens@outlook.com", // list of receivers
-    subject: `Contact Request`, // Subject line
-    text: `email: ${email}</h1><p>\n\nmessage: ${message}`, // plain text body
-    html: `<h1>email: ${email}</h1><p>\n\nmessage: ${message}</p>`,
-  });
-
-  await transporter.sendMail({
-    from: "Broky.dev <info@trenddad.site>", // sender address
-    to: email, // list of receivers
-    subject: `Thank you!`, // Subject line
-    text: `Mark will contact you as soon as possible!`, // plain text body
-    html: `<p>Mark will contact you as soon as possible!</p>`,
-  });
-};
-
 export const useSendContact = routeAction$(async (data) => {
   const message = data.message.toString();
   const email = data.email.toString();
+  const sendEmail = async (message: string, email: string) => {
+    const transporter = nodemailer.createTransport({
+      host: "mail.trenddad.site",
+      port: 465,
+      secure: true,
+      auth: {
+        user: "info@trenddad.site", // generated ethereal user
+        pass: process.env.EMAILPASS, // generated ethereal password
+      },
+    });
+
+    await transporter.sendMail({
+      from: "Broky.dev <info@trenddad.site>", // sender address
+      to: "mark.teekens@outlook.com", // list of receivers
+      subject: `Contact Request`, // Subject line
+      text: `email: ${email}</h1><p>\n\nmessage: ${message}`, // plain text body
+      html: `<h1>email: ${email}</h1><p>\n\nmessage: ${message}</p>`,
+    });
+
+    await transporter.sendMail({
+      from: "Broky.dev <info@trenddad.site>", // sender address
+      to: email, // list of receivers
+      subject: `Thank you!`, // Subject line
+      text: `Mark will contact you as soon as possible!`, // plain text body
+      html: `<p>Mark will contact you as soon as possible!</p>`,
+    });
+  };
   await sendEmail(message, email);
 
   return {
