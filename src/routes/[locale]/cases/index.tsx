@@ -29,8 +29,8 @@ export default component$(() => {
               <div class="mb-10 grid gap-6 sm:grid-cols-2 lg:mb-14 lg:grid-cols-4">
                 {projects.map((project) => {
                   return (
-                    <>
-                      <Link href={`${project.id}`}>
+                    
+                      <Link key={project.id} href={`${project.id}`}>
                         <div class="group flex flex-col rounded-xl border border-gray-800 bg-white shadow-sm transition hover:shadow-md ">
                           <div class="relative overflow-hidden rounded-t-lg ">
                             <Image
@@ -66,7 +66,7 @@ export default component$(() => {
                           </div>
                         </div>
                       </Link>
-                    </>
+                  
                   );
                 })}
               </div>

@@ -2,7 +2,7 @@ import { component$ } from "@builder.io/qwik";
 import { Link, routeLoader$, useLocation } from "@builder.io/qwik-city";
 import { Image } from "@unpic/qwik";
 import Partners from "~/components/partners";
-import { UseProductByID } from "~/utils/composables/useProductByID";
+import { UseProductByID } from "~/utils/composables/UseProductByID";
 
 export const useQuery = routeLoader$(({ params }) => {
   return { id: params.id };
