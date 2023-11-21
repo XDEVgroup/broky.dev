@@ -8,12 +8,14 @@ specifiers:
   '@builder.io/qwik-city': ^1.2.18
   '@types/eslint': 8.37.0
   '@types/node': ^20.2.5
+  '@types/nodemailer': ^6.4.14
   '@typescript-eslint/eslint-plugin': 5.59.5
   '@typescript-eslint/parser': ^5.0.1
   '@unpic/qwik': ^0.0.36
   autoprefixer: ^10.4.14
   eslint: ^8.7.0
   eslint-plugin-qwik: ^1.2.18
+  nodemailer: ^6.9.7
   postcss: ^8.4.24
   prettier: ^2.5.1
   tailwindcss: ^3.3.2
@@ -26,6 +28,7 @@ specifiers:
 dependencies:
   '@angular/localize': 16.2.12_qdc73cjistofj7ydnluzhriami
   '@unpic/qwik': 0.0.36_@builder.io+qwik@1.2.18
+  nodemailer: 6.9.7
 
 devDependencies:
   '@angular/compiler': 16.2.12
@@ -34,6 +37,7 @@ devDependencies:
   '@builder.io/qwik-city': 1.2.18_@types+node@20.4.8
   '@types/eslint': 8.37.0
   '@types/node': 20.4.8
+  '@types/nodemailer': 6.4.14
   '@typescript-eslint/eslint-plugin': 5.59.5_jdo46vuzdvtqioigt7za7mzwma
   '@typescript-eslint/parser': 5.59.5_jgkqkwom7vrxl4kyi454n2sy2i
   autoprefixer: 10.4.14_postcss@8.4.27
@@ -2336,6 +2340,12 @@ packages:
 
   /@types/node/20.4.8:
     resolution: {integrity: sha512-0mHckf6D2DiIAzh8fM8f3HQCvMKDpK94YQ0DSVkfWTG9BZleYIWudw9cJxX8oCk9bM+vAkDyujDV6dmKHbvQpg==}
+
+  /@types/nodemailer/6.4.14:
+    resolution: {integrity: sha512-fUWthHO9k9DSdPCSPRqcu6TWhYyxTBg382vlNIttSe9M7XfsT06y0f24KHXtbnijPGGRIcVvdKHTNikOI6qiHA==}
+    dependencies:
+      '@types/node': 20.4.8
+    dev: true
 
   /@types/responselike/1.0.0:
     resolution: {integrity: sha512-85Y2BjiufFzaMIlvJDvTTB8Fxl2xfLo4HgmHzVBz08w4wDePCTjYw66PdrolO0kzli3yam/YCgRufyo1DdQVTA==}
@@ -6282,6 +6292,11 @@ packages:
 
   /node-releases/2.0.13:
     resolution: {integrity: sha512-uYr7J37ae/ORWdZeQ1xxMJe3NtdmqMC/JZK+geofDrkLUApKRHPd18/TxtBOJ4A0/+uUIliorNrfYV6s1b02eQ==}
+
+  /nodemailer/6.9.7:
+    resolution: {integrity: sha512-rUtR77ksqex/eZRLmQ21LKVH5nAAsVicAtAYudK7JgwenEDZ0UIQ1adUGqErz7sMkWYxWTTU1aeP2Jga6WQyJw==}
+    engines: {node: '>=6.0.0'}
+    dev: false
 
   /nopt/5.0.0:
     resolution: {integrity: sha512-Tbj67rffqceeLpcRXrT7vKAN8CwfPeIBgM7E6iBkmKLV7bEMwpGgYLGv0jACUsECaa/vuxP0IjEont6umdMgtQ==}

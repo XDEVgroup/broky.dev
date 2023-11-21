@@ -8,7 +8,7 @@ const qwik = "/stack/qwik.png";
 const css = "/stack/css.png";
 const html = "/stack/html.png";
 
-export const logos = [ts,react,next,nuxt,go,vue,qwik,css,html]
+export const logos = [ts, react, next, nuxt, go, vue, qwik, css, html];
 
 export const projects = [
   {
@@ -19,8 +19,7 @@ export const projects = [
     stack: [next, react, ts],
     website: "https://veta-zackcgl.vercel.app/",
     desc: `${$localize`:@@vetadesc:`}`,
-    desc2:
-      `${$localize`:@@vetadesc2:`}`,
+    desc2: `${$localize`:@@vetadesc2:`}`,
   },
 
   {
@@ -75,8 +74,7 @@ export const projects = [
     stack: [nuxt, vue, ts],
     website: "https://cheapsoftwarelicence.com",
     desc: "Wegens privacy redenen is er geen story. Je kunt de website gewoon bezoeken.",
-    desc2:
-      "",
+    desc2: "",
   },
   {
     id: 7,
@@ -107,7 +105,8 @@ export const projects = [
     stack: [html, css],
     website: "http://crewstars.nl/",
     desc: "Crew Stars is een Nederlands bedrijf die zich heeft gespecialiseerd in het aanleveren van personeel in de festivalbranche en kan door haar expertise in het vinden van de juiste mensen snel schakelen en heeft daarom een goede marktpositie weten te krijgen in de markt.",
-    desc2: "Het bedrijf heeft TSX de opdracht gegeven een landing page te maken die interactief is voor nieuwe potentiele werknemers, maar ook informatie biedt aan toekomstige partners of huidige partners. Door de animaties en simpele layout hebben wij een interactieve website kunnen maken waar crewstars op heeft kunnen bouwen.",
+    desc2:
+      "Het bedrijf heeft TSX de opdracht gegeven een landing page te maken die interactief is voor nieuwe potentiele werknemers, maar ook informatie biedt aan toekomstige partners of huidige partners. Door de animaties en simpele layout hebben wij een interactieve website kunnen maken waar crewstars op heeft kunnen bouwen.",
   },
   {
     id: 10,
@@ -131,7 +130,7 @@ export const projects = [
     desc2:
       "Het bedrijf heeft TSX de opdracht gegeven om een landing page te bouwen met meerdere contact pagina's. Er is gekozen voor groene en roze kleuren om de style van de onderneming aan te houden. De applicatie is gemaakt met NextJS en Typescript. Ondernemers kunnen via het inlogpartaal inloggen om gegevens bij te houden. Er is tijdens het maken van de website veel bedacht en gediscusseerd om het zo goed mogelijk naar wens te maken, en iedereen was zeer blij met het eindresultaat.",
   },
- 
+
   {
     id: 12,
     title: "VETA NETWORK V2",
@@ -151,9 +150,7 @@ export const projects = [
     stack: [next, react, ts],
     website: "https://cannabis-pink.vercel.app/",
     desc: "No description available",
-    desc2:
-      "",
-  
+    desc2: "",
   },
   {
     id: 14,
@@ -163,9 +160,7 @@ export const projects = [
     stack: [next, react, ts],
     website: "https://tsxtech.nl",
     desc: "No description available",
-    desc2:
-      "",
-  
+    desc2: "",
   },
   {
     id: 9999,
@@ -175,9 +170,6 @@ export const projects = [
     stack: [vue, go, react, ts],
     website: "https://www.linkedin.com/in/markteekens/",
     desc: "Hire me now by pressing the link.",
-    desc2:
-      "",
-  
-  }
+    desc2: "",
+  },
 ];
-

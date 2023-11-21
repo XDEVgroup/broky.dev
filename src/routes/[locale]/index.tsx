@@ -1,5 +1,5 @@
 import { component$ } from "@builder.io/qwik";
-import type { DocumentHead} from "@builder.io/qwik-city";
+import type { DocumentHead } from "@builder.io/qwik-city";
 import { Link } from "@builder.io/qwik-city";
 import Header from "~/components/header";
 import Logos from "~/components/logos";
@@ -51,19 +51,16 @@ export default component$(() => {
             </div>
 
             <div class="max-w-3xl text-center mx-auto">
-              <div class="flex items-center justify-center">
+              {/* <div class="flex items-center justify-center">
               <img src="/markt.png" alt="" class="h-14 w-14 rounded-full"/>
-              </div>
+              </div> */}
               <h1 class="block font-medium text-gray-200 text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
-              {$localize`:@@hey:`}
+                {$localize`:@@hey:`}
               </h1>
             </div>
 
             <div class="max-w-3xl text-center mx-auto">
-              <p class="text-lg text-gray-400">
-              {$localize`:@@experience:`}
-               
-              </p>
+              <p class="text-lg text-gray-400">{$localize`:@@experience:`}</p>
             </div>
             <div class="text-white max-w-3xl text-center mx-auto">
               <div class="flex items-center p-4 bg-gray-100 rounded gap-4 justify-between">
@@ -78,8 +75,8 @@ export default component$(() => {
                   class="inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 shadow-lg shadow-transparent hover:shadow-blue-700/50 border border-transparent text-white text-sm font-medium rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white py-3 px-6 dark:focus:ring-offset-gray-800"
                   href="cases"
                 >
-                   {$localize`:@@myprojects:`}
-                 
+                  {$localize`:@@myprojects:`}
+
                   <svg
                     class="w-2.5 h-2.5"
                     width="16"
@@ -96,17 +93,15 @@ export default component$(() => {
                   </svg>
                 </Link>
               </div>
-              <a
+              <Link
                 target="_blank"
                 class="inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 shadow-lg shadow-transparent hover:shadow-blue-700/50 border border-transparent text-white text-sm font-medium rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white py-3 px-6 dark:focus:ring-offset-gray-800"
-                href="https://www.linkedin.com/in/markteekens/"
+                href="/en/contact"
               >
-                 {$localize`:@@hireme:`}
-              
-              </a>
+                {$localize`:@@hireme:`}
+              </Link>
             </div>
-           <Partners />
-
+            <Partners />
           </div>
         </div>
       </div>
