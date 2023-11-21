@@ -31,13 +31,11 @@ const sendEmail = async (message: string, email: string) => {
   });
 };
 
-export const useSendContact = routeAction$(async (data, { status }) => {
+export const useSendContact = routeAction$(async (data) => {
   const message = data.message.toString();
   const email = data.email.toString();
-  status(201);
   await sendEmail(message, email);
-  //   redirect(302, "/");
-  status(200);
+
   return {
     success: true,
     review: "Send succesfully",
@@ -46,7 +44,6 @@ export const useSendContact = routeAction$(async (data, { status }) => {
 
 export default component$(() => {
   const action = useSendContact();
-  console.log(action.isRunning);
   return (
     <div>
       <Header />
