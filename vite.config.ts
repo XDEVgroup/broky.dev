@@ -8,11 +8,7 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 export default defineConfig(() => {
   return {
     build: {
-      ssr: true,
-      rollupOptions: {
-        input: ['src/entry.vercel-edge.tsx', '@qwik-city-plan'],
-      },
-      outDir: '.vercel/output/functions/_qwik-city.func',
+      ssr: false,
     },
     plugins: [qwikCity(), qwikVite(), tsconfigPaths(), vercelEdgeAdapter({
      
