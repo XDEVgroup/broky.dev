@@ -8,6 +8,7 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 export default defineConfig(() => {
   return {
     plugins: [qwikCity(), qwikVite(), tsconfigPaths(), vercelEdgeAdapter({
+      outputConfig: true,
       ssg: {
         include: ['/*'],
         origin: 'https://broky.dev',
