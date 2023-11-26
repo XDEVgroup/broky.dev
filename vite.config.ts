@@ -7,7 +7,21 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig(() => {
   return {
-    plugins: [qwikCity(), qwikVite(), tsconfigPaths()],
+    build: {
+      ssr: true,
+      rollupOptions: {
+        input: ['src/entry.vercel-edge.tsx', '@qwik-city-plan'],
+      },
+      outDir: '.vercel/output/functions/_qwik-city.func',
+    },
+    plugins: [qwikCity(), qwikVite(), tsconfigPaths(), vercelEdgeAdapter({
+     
+      ssg: {
+        include: ['/*'],
+        origin: 'https://broky.dev',
+        sitemapOutFile: 'sitemap.xml',
+      },
+    })],
     preview: {
       headers: {
         'Cache-Control': 'public, max-age=600',
